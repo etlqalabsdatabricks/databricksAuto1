@@ -1,0 +1,54 @@
+2026-10-01 18:09:40-INFO-Creating SparkSession
+2026-10-01 18:09:40-INFO-SparkSession created successfully
+2026-10-01 18:09:44-INFO-test_data_extraction_from_csv_to_table - expected rows: 8809, actual rows: 8809
+2026-10-01 18:09:44-INFO-test_data_extraction_from_csv_to_table passed
+2026-10-01 18:09:44-INFO-PASSED - test_data_extraction_from_csv_to_table
+2026-10-01 18:09:44-INFO-PASSED - test_data_extraction_from_json_to_stage
+2026-10-01 18:09:44-INFO-PASSED - test_data_extraction_from_xml_to_stage
+2026-10-01 18:09:45-INFO-test_data_loading_monthly_sales_summary - expected rows: 22, actual rows: 22
+2026-10-01 18:09:45-INFO-test_data_loading_monthly_sales_summary passed
+2026-10-01 18:09:45-INFO-PASSED - test_data_loading_monthly_sales_summary
+2026-10-01 18:09:47-INFO-test_data_loading_fact_inventory - expected rows: 30, actual rows: 30
+2026-10-01 18:09:47-INFO-test_data_loading_fact_inventory passed
+2026-10-01 18:09:47-INFO-PASSED - test_data_loading_fact_inventory
+2026-10-01 18:09:47-INFO-PASSED - test_data_loading_fact_sales
+2026-10-01 18:09:47-INFO-PASSED - test_data_loading_inventory_level_by_stores
+2026-10-01 18:09:47-INFO-Test case: test_data_quality_duplicate_check_csv started
+2026-10-01 18:09:48-INFO-Test case: test_data_quality_duplicate_check_csv completed
+2026-10-01 18:09:48-INFO-PASSED - test_data_quality_duplicate_check_csv
+2026-10-01 18:09:48-INFO-Test case: test_data_quality_null_check_csv started
+2026-10-01 18:09:50-INFO-FAILED - test_data_quality_null_check_csv
+2026-10-01 18:09:50-INFO-Test case: test_data_quality_file_existence_csv started
+2026-10-01 18:09:51-INFO-Test case: test_data_quality_file_existence_csv completed
+2026-10-01 18:09:51-INFO-PASSED - test_data_quality_file_existence_csv
+2026-10-01 18:09:51-INFO-Test case: test_data_quality_file_size_csv started
+2026-10-01 18:09:51-INFO-Test case: test_data_quality_file_size_csv completed
+2026-10-01 18:09:51-INFO-PASSED - test_data_quality_file_size_csv
+2026-10-01 18:09:51-INFO-Test case: test_data_quality_duplicate_check_table started
+2026-10-01 18:09:52-INFO-Test case: test_data_quality_duplicate_check_table completed
+2026-10-01 18:09:52-INFO-PASSED - test_data_quality_duplicate_check_table
+2026-10-01 18:09:52-INFO-PASSED - test_data_quality_duplicate_check_json
+2026-10-01 18:09:52-INFO-PASSED - test_data_quality_null_check_json
+2026-10-01 18:09:53-INFO-test_data_transformation_filter_sales - expected rows: 56, actual rows: 56
+2026-10-01 18:09:53-INFO-test_data_transformation_filter_sales passed
+2026-10-01 18:09:53-INFO-PASSED - test_data_transformation_filter_sales
+2026-10-01 18:09:54-INFO-test_data_transformation_router_high_sales - expected rows: 28, actual rows: 28
+2026-10-01 18:09:54-INFO-test_data_transformation_router_high_sales passed
+2026-10-01 18:09:54-INFO-PASSED - test_data_transformation_router_high_sales
+2026-10-01 18:09:56-INFO-test_data_transformation_router_low_sales - expected rows: 28, actual rows: 28
+2026-10-01 18:09:56-INFO-test_data_transformation_router_low_sales passed
+2026-10-01 18:09:56-INFO-PASSED - test_data_transformation_router_low_sales
+2026-10-01 18:09:56-INFO-PASSED - test_data_transformation_aggregator_sales
+2026-10-01 18:09:56-INFO-PASSED - test_data_transformation_joiner
+2026-10-01 18:09:56-INFO-Column names validation passed
+2026-10-01 18:09:56-INFO-PASSED - test_table_column_names
+2026-10-01 18:09:56-INFO-Column datatypes validation passed
+2026-10-01 18:09:56-INFO-PASSED - test_table_column_datatypes
+2026-10-01 18:09:57-INFO-Referential integrity check passed
+2026-10-01 18:09:57-INFO-PASSED - test_referential_integrity_fact_sales_product_id
+2026-10-01 18:09:57-INFO-PASSED - test_fact_inventory_column_names
+2026-10-01 18:09:57-INFO-PASSED - test_monthly_sales_summary_column_names
+2026-10-01 18:09:57-INFO-PASSED - test_inventory_level_by_stores_column_names
+O-PASSED - test_fact_inventory_column_names
+2026-10-01 18:09:57,462-INFO-PASSED - test_monthly_sales_summary_column_names
+2026-10-01 18:09:57,466-INFO-PASSED - test_inventory_level_by_stores_column_names
