@@ -36,6 +36,13 @@ def spark():
     spark_session = SparkSession.getActiveSession()
     if spark_session is None:
         from databricks.connect import DatabricksSession
-        spark_session = DatabricksSession.builder.getOrCreate()
+        builder = DatabricksSession.builder
+        # Support running outside Databricks notebooks (e.g., Jenkins CI)
+        # DatabricksSession picks up DATABRICKS_HOST and DATABRICKS_TOKEN env vars automatically
+        host = os.environ.get("DATABRICKS_HOST")
+        token = os.environ.get("DATABRICKS_TOKEN")
+        if host and token:
+            builder = builder.host(host).token(token)
+        spark_session = builder.getOrCreate()
     logger.info("SparkSession created successfully")
     return spark_session
