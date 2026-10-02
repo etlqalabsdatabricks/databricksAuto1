@@ -42,7 +42,7 @@ def spark():
         host = os.environ.get("DATABRICKS_HOST")
         token = os.environ.get("DATABRICKS_TOKEN")
         if host and token:
-            builder = builder.host(host).token(token)
+            builder = builder.host(host).token(token).serverless(True)
         spark_session = builder.getOrCreate()
     logger.info("SparkSession created successfully")
     return spark_session
